@@ -3,3 +3,30 @@ W Listing bot frr
 
 
 I think /whitelist doesnt work but easy fix and u can just whitelist manually in whitelist.json
+
+
+SETUP:
+
+1. Go to /storage/config.json and fill in the info 
+{
+    "TOKEN": "",
+    "CLIENTID": "",
+    "GUILDID": "",
+    "USERID": ""
+}
+
+2. Whitelist your server in /storage/whitelist.json
+     {
+    "serverId": "",
+    "sellerRoleId": "",
+    "customerRoleId": "",
+    "vouchChannelId": "",
+    "categoryId": "",
+    "ticketId": "",
+    "pingRoleId": "",
+    "reactEnabled": true,
+    "emoji": "",
+    "mfaStock": {}
+  }
+]
+3. Put your Hypixel API Key In /commands/list.js near the top
