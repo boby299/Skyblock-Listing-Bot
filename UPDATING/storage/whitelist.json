@@ -1,0 +1,26 @@
+[
+  {
+    "serverId": "1282075102456053763",
+    "sellerRoleId": "1282075369742143508A",
+    "customerRoleId": "1282075420509995140",
+    "vouchChannelId": "1282075103169089560",
+    "categoryId": "1282075103169089558",
+    "ticketId": "1282075103169089558",
+    "reactEnabled": true,
+    "emoji": "🙏",
+    "mfaStock": {},
+    "pingRoleId": "1286859231487590573"
+  },
+  {
+    "serverId": "1285338081230327950",
+    "sellerRoleId": "1285338081230327954",
+    "customerRoleId": "1285338081230327953",
+    "vouchChannelId": "1285338082090156165",
+    "categoryId": "1285338082090156173",
+    "ticketId": "1285338081809010801",
+    "pingRoleId": "1287025775668756623",
+    "reactEnabled": true,
+    "emoji": "🔥",
+    "mfaStock": {}
+  }
+]
