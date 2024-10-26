@@ -30,3 +30,6 @@ SETUP:
   }
 ]
 3. Put your Hypixel API Key In /commands/list.js near the top
+
+
+If Need Help DM speedometers on disc (Me)
