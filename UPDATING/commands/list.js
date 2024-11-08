@@ -369,28 +369,28 @@ module.exports = {
             let rankEmoji = '';
             switch (playerRank) {
                 case 'None':
-                    rankEmoji = '<:nonI:1245104672906281001><:nonF:1245104671064981605>';
+                    rankEmoji = '<:non1:1304219808526766113><:non2:1304219859390828734>';
                     break;
                 case 'VIP':
-                    rankEmoji = '<:vipl:1254219145231208521><:vipF:1245104684746932337>';
+                    rankEmoji = '<:vip1:1304219907738832916><:vip2:1304219957885669477>';
                     break;
                 case 'VIP_PLUS':
-                    rankEmoji = '<:vipl:1254219145231208521><:vipPlusI:1245104688911614052>';
+                    rankEmoji = '<:vip1:1304219907738832916><:vip3:1304220013510787102>';
                     break;
                 case 'MVP':
-                    rankEmoji = '<:mvpI:1245104667382255797><:mvpF:1245104663875948647>';
+                    rankEmoji = '<:mvp1:1304220090677334046><:mvp2:1304220154909036574>';
                     break;
                 case 'MVP_PLUS':
-                    rankEmoji = '<:mvpI:1245104667382255797><:mvpPlusl:1254219797571571853>';
+                    rankEmoji = '<:mvp1:1304220090677334046><:mvp3:1304220203957096550>';
                     break;
                 case 'MVP_PLUS_PLUS':
-                    rankEmoji = '<:mvpplusplusl:1254223996829044828><:mvpplusplusF:1254223986251006124><:mvpppF2:1254223979699245177>';
+                    rankEmoji = '<:pluss1:1304226612228784189><:pluss2:1304226634576171030><:pluss3:1304226663407685633>';
                     break;
                 case '[YOUTUBE]':
-                    rankEmoji = '<:youtubeI:XXXXXXXXX><:youtubeF:XXXXXXXXX>';
+                    rankEmoji = '<:yt1:1304225814581084252><:yt2:1304225839285538846><:yt3:1304225865369911326>';
                     break;
                 default:
-                    rankEmoji = '<:nonI:1245104672906281001><:nonF:1245104671064981605>';
+                    rankEmoji = '<:non1:1304219808526766113><:non2:1304219859390828734>';
                     break;
             }
 
@@ -416,13 +416,16 @@ module.exports = {
                 }
             });
 
+            const pingRoleId = serverWhitelistEntry.pingRoleId;
+            await channel.send(`<@&${pingRoleId}>`);
+
             const embed = new EmbedBuilder()
                 .setTitle("Account Information")
                 .setDescription(`**Rank**\n${rankEmoji}`)
                 .setColor('#302c34')
                 .setThumbnail(`https://minotar.net/avatar/${uuid}/250.png`)
                 .addFields({
-                    name: '<:skills:1254213411214987295> Skill Average',
+                    name: '<:skillav:1304222818640072802> Skill Average',
                     value: `${skillAverage}`,
                     inline: true
                 }, {
@@ -430,12 +433,12 @@ module.exports = {
                     value: ' ',
                     inline: true
                 }, {
-                    name: '<:cata:1245104644938661999> Catacombs',
+                    name: '<:cata:1304220934659375106> Catacombs',
                     value: `${additionalStats.dungeonLevel}`,
                     inline: true
                 })
                 .addFields({
-                    name: '<:slayer:1254214894430191779> Slayers',
+                    name: '<:slayers:1304223045396987964> Slayers',
                     value: `${additionalStats.slayerLevels}`,
                     inline: true
                 }, {
@@ -443,17 +446,17 @@ module.exports = {
                     value: ' ',
                     inline: true
                 }, {
-                    name: '<:level:1245104655843721218> Level',
+                    name: '<:sblvl:1304220833694093372> Level',
                     value: `${additionalStats.sbLevel}`,
                     inline: true
                 })
                 .addFields({
-                    name: '<:total:1245104680871133407> Networth',
+                    name: '<:networth:1304223332031270932> Networth',
                     value: `Networth: ${formatNumber(netWorth)}\n Soulbound: ${formatNumber(soulboundNetworth)}`,
                     inline: false
                 }, {
-                    name: '<:mining:1254215729797140491> HOTM',
-                    value: `<:hotm:1254225440344641678> Heart of the Mountain: ${additionalStats.hotmLevel}\n<:mithril:1254216931100327937> Mithril Powder: ${formatNumber(additionalStats.mithrilPowder)}\n<:gemstone:1245104652496666725> Gemstone Powder: ${formatNumber(additionalStats.gemstonePowder)}`,
+                    name: '<:mining:1304227698561912953> HOTM',
+                    value: `<:hotm:1304227548032667648> Heart of the Mountain: ${additionalStats.hotmLevel}\n<:mithril:1304227943408603138> Mithril Powder: ${formatNumber(additionalStats.mithrilPowder)}\n<:gemstone:1304227803365113908> Gemstone Powder: ${formatNumber(additionalStats.gemstonePowder)}`,
                     inline: false
                 }, {
                     name: ':money_with_wings: Price',
@@ -465,8 +468,8 @@ module.exports = {
                     inline: false
                 })
                 .setFooter({
-                    text: 'made by @zoneslisting | discord.gg/zones',
-                    iconURL: 'https://media.discordapp.net/attachments/1238219454417207378/1254217178266206350/PFP.png?ex=66809945&is=667f47c5&hm=f8329925d14263fa7c3e73b30acfacebc4c0014bc34e252692a0e492d0709156&=&format=webp&quality=lossless&width=183&height=183'
+                    text: 'ThanYou zones for the code <3',
+                    iconURL: 'https://cdn.discordapp.com/avatars/1300773229467537481/01a3154bc42012e945828e266c7ace51.webp?size=80'
                 });
 
             const row1 = new ActionRowBuilder()
