@@ -1,5 +1,5 @@
 # Skyblock-Listing-Bot
-W Listing bot frr
+ThankYou to zones for the listing bot<3
 
 I think /whitelist doesnt work but easy fix and u can just whitelist manually in whitelist.json
 
@@ -34,8 +34,8 @@ SETUP:
 ]
 
 
-3. Put your Hypixel API Key In /commands/list.js near the top
+3. Put your Hypixel API Key In /commands/list.js near the top (also use this to change amojis or whatever)
 
 
-If Need Help DM speedometers on disc (Me)
+If Need Help DM speedometers or whosismefr (me) on disc 
 ![image](https://github.com/user-attachments/assets/ec5e22aa-6fe1-479b-8d84-edf80501abc6)
