@@ -152,11 +152,11 @@ module.exports = {
             .setTitle('MFA Stock')
             .setDescription('Current MFA stock')
             .addFields(
-                { name: '\u200b', value: `<:nonI:1245104672906281001><:nonF:1245104671064981605> ${serverEntry.mfaStock['non_1_non_2']}`, inline: true },
-                { name: '\u200b', value: `<:vipl:1254219145231208521><:vipF:1245104684746932337> ${serverEntry.mfaStock['vip_1_vip_2']}`, inline: true },
-                { name: '\u200b', value: `<:vipl:1254219145231208521><:vipPlusI:1245104688911614052> ${serverEntry.mfaStock['vip_1_vipplus_2']}`, inline: true },
-                { name: '\u200b', value: `<:mvpI:1245104667382255797><:mvpF:1245104663875948647> ${serverEntry.mfaStock['mvp_1_mvp_2']}`, inline: true },
-                { name: '\u200b', value: `<:mvpI:1245104667382255797><:mvpPlusl:1254219797571571853> ${serverEntry.mfaStock['mvp_1_mvpplus_2']}`, inline: true }
+                { name: '\u200b', value: `<:non1:1304219808526766113><:non2:1304219859390828734> ${serverEntry.mfaStock['non_1_non_2']}`, inline: true },
+                { name: '\u200b', value: `<:vip1:1304219907738832916><:vip2:1304219957885669477> ${serverEntry.mfaStock['vip_1_vip_2']}`, inline: true },
+                { name: '\u200b', value: `<:vip1:1304219907738832916><:vip3:1304220013510787102> ${serverEntry.mfaStock['vip_1_vipplus_2']}`, inline: true },
+                { name: '\u200b', value: `<:mvp1:1304220090677334046><:mvp2:1304220154909036574> ${serverEntry.mfaStock['mvp_1_mvp_2']}`, inline: true },
+                { name: '\u200b', value: `<:mvp1:1304220090677334046><:mvp3:1304220203957096550> ${serverEntry.mfaStock['mvp_1_mvpplus_2']}`, inline: true }
             );
 
         try {
