@@ -54,7 +54,7 @@ module.exports = {
                     .setTitle('Skyblock Listing Bot')
                     .setDescription(`Deal Finished\n\n<@${user.id}>, make sure to vouch for the seller in <#${vouchChannelId}>\n\n`)
                     .setColor('#302c34')
-                    .setThumbnail('https://media.discordapp.net/attachments/1238219454417207378/1251724090671108208/listing.png?ex=66801927&is=667ec7a7&hm=bcde0ebb6c6038837925562627563e7b30f6b4f85d27a786472a8346cf279103&=&format=webp&quality=lossless');
+                    .setThumbnail('https://cdn.discordapp.com/avatars/1300773229467537481/01a3154bc42012e945828e266c7ace51.webp?size=80');
 
                 await channel.send({
                     embeds: [message]
