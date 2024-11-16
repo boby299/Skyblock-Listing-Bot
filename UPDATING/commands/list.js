@@ -423,7 +423,7 @@ module.exports = {
                 .setTitle("Account Information")
                 .setDescription(`**Rank**\n${rankEmoji}`)
                 .setColor('#302c34')
-                .setThumbnail(`https://minotar.net/avatar/${uuid}/250.png`)
+                .setThumbnail(`https://cdn.discordapp.com/attachments/1307461671421345863/1307462195608682567/body.png?ex=673a648e&is=6739130e&hm=63494271bac5772772455b6d0b579517aace694464044602552b6f40ee5ec2fa&`)
                 .addFields({
                     name: '<:skillav:1304222818640072802> Skill Average',
                     value: `${skillAverage}`,
