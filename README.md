@@ -8,6 +8,7 @@ I think /whitelist doesnt work but easy fix and u can just whitelist manually in
 
 SETUP:
 
+install dependecies or whatever
 1. Go to /storage/config.json and fill in the info 
 {
     "TOKEN": "",
