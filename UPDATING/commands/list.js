@@ -423,7 +423,7 @@ module.exports = {
                 .setTitle("Account Information")
                 .setDescription(`**Rank**\n${rankEmoji}`)
                 .setColor('#302c34')
-                .setThumbnail(`https://minotar.net/avatar/f031c8aa-a025-4306-b6ea-b01d14e9ebbe/250.png`)
+                .setThumbnail(`https://mc-heads.net/body/anonymous/left`)
                 .addFields({
                     name: '<:skillav:1304222818640072802> Skill Average',
                     value: `${skillAverage}`,
