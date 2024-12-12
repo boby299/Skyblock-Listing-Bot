@@ -1,12 +1,12 @@
 [
   {
-    "serverId": "1300768201818509352",
-    "sellerRoleId": "1300768762059948062",
-    "customerRoleId": "1300768708532244541",
-    "vouchChannelId": "1300771170668249128",
-    "categoryId": "1300770625748467713",
-    "ticketId": "1300771756310794281",
-    "pingRoleId": "1300768821098840135",
+    "serverId": "1302263652325523496",
+    "sellerRoleId": "1302263652325523500",
+    "customerRoleId": "1302263652325523499",
+    "vouchChannelId": "1302263652509945906",
+    "categoryId": "1302263652727918639",
+    "ticketId": "1302263652509945901",
+    "pingRoleId": "1302263652325523497",
     "reactEnabled": true,
     "emoji": "🔥",
     "mfaStock": {}
