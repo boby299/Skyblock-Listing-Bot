@@ -369,28 +369,28 @@ module.exports = {
             let rankEmoji = '';
             switch (playerRank) {
                 case 'None':
-                    rankEmoji = '<:non1:1304219808526766113><:non2:1304219859390828734>';
+                    rankEmoji = '<:non1:1319970802426187817><:non2:1319970824014266409>';
                     break;
                 case 'VIP':
-                    rankEmoji = '<:vip1:1304219907738832916><:vip2:1304219957885669477>';
+                    rankEmoji = '<:vip1:1319970846349066270><:vip2:1319970867584958596>';
                     break;
                 case 'VIP_PLUS':
-                    rankEmoji = '<:vip1:1304219907738832916><:vip3:1304220013510787102>';
+                    rankEmoji = '<:vip1:1319970846349066270><:vip3:1319970887742652456>';
                     break;
                 case 'MVP':
-                    rankEmoji = '<:mvp1:1304220090677334046><:mvp2:1304220154909036574>';
+                    rankEmoji = '<:mvp1:1319970912564412477><:mvp2:1319970935582887957>';
                     break;
                 case 'MVP_PLUS':
-                    rankEmoji = '<:mvp1:1304220090677334046><:mvp3:1304220203957096550>';
+                    rankEmoji = '<:mvp1:1319970912564412477><:mvp3:1319970959054209104>';
                     break;
                 case 'MVP_PLUS_PLUS':
-                    rankEmoji = '<:pluss1:1304226612228784189><:pluss2:1304226634576171030><:pluss3:1304226663407685633>';
+                    rankEmoji = '<:pluss1:1319970986178773012><:pluss2:1319971015589232651><:pluss3:1319971036745170965>';
                     break;
                 case '[YOUTUBE]':
                     rankEmoji = '<:yt1:1304225814581084252><:yt2:1304225839285538846><:yt3:1304225865369911326>';
                     break;
                 default:
-                    rankEmoji = '<:non1:1304219808526766113><:non2:1304219859390828734>';
+                    rankEmoji = '<:non1:1319970802426187817><:non2:1319970824014266409>';
                     break;
             }
 
@@ -432,7 +432,7 @@ module.exports = {
                 .setColor('#302c34')
                 .setThumbnail(`https://mc-heads.net/body/anonymous/left`)
                 .addFields({
-                    name: '<:skillav:1304222818640072802> Skill Average',
+                    name: '<:skillav:1319970555423756298> Skill Average',
                     value: `${skillAverage}`,
                     inline: true
                 }, {
@@ -440,12 +440,12 @@ module.exports = {
                     value: ' ',
                     inline: true
                 }, {
-                    name: '<:cata:1304220934659375106> Catacombs',
+                    name: '<:cata:1319970608674639953> Catacombs',
                     value: `${additionalStats.dungeonLevel}`,
                     inline: true
                 })
                 .addFields({
-                    name: '<:slayers:1304223045396987964> Slayers',
+                    name: '<:slayers:1319970655831064597> Slayers',
                     value: `${additionalStats.slayerLevels}`,
                     inline: true
                 }, {
@@ -453,17 +453,17 @@ module.exports = {
                     value: ' ',
                     inline: true
                 }, {
-                    name: '<:sblvl:1304220833694093372> Level',
+                    name: '<:sblvl:1319970632951140423> Level',
                     value: `${additionalStats.sbLevel}`,
                     inline: true
                 })
                 .addFields({
-                    name: '<:total:1245104680871133407> Networth',
+                    name: '<:networth:1319973336163418153> Networth',
                     value: `Networth: ${formatNumber(totalNetworth)}\n Unsoulbound: ${formatNumber(unsoulboundNetworth)}`,
                     inline: false
                 }, {
-                    name: '<:mining:1304227698561912953> HOTM',
-                    value: `<:hotm:1304227548032667648> Heart of the Mountain: ${additionalStats.hotmLevel}\n<:mithril:1304227943408603138> Mithril Powder: ${formatNumber(additionalStats.mithrilPowder)}\n<:gemstone:1304227803365113908> Gemstone Powder: ${formatNumber(additionalStats.gemstonePowder)}`,
+                    name: '<:mining:1319970672453222432> HOTM',
+                    value: `<:hotm:1320002088163479594> Heart of the Mountain: ${additionalStats.hotmLevel}\n<:mithril:1320002127157919754> Mithril Powder: ${formatNumber(additionalStats.mithrilPowder)}\n<:gemstone:1320002108610838628> Gemstone Powder: ${formatNumber(additionalStats.gemstonePowder)}`,
                     inline: false
                 }, {
                     name: ':money_with_wings: Price',
