@@ -1,6 +1,8 @@
 # Skyblock-Listing-Bot
 ThankYou to zones for the listing bot<3
 
+Need to run "npm install skyhelper-networth" for list to work
+
 I think /whitelist doesnt work but easy fix and u can just whitelist manually in whitelist.json
 
 
