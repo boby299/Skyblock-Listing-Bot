@@ -9,6 +9,7 @@ const {
 const axios = require('axios');
 const fs = require('fs');
 const sqlite3 = require('sqlite3').verbose();
+const { getNetworth } = require('skyhelper-networth');
 
 let whitelist;
 try {
@@ -350,7 +351,7 @@ module.exports = {
 
 
 
-            const netWorthData = await getNetWorth(ign, selectedProfile.profile_id); // Pass profile ID here
+                const netWorthData = await getNetWorth(ign, selectedProfile.profile_id); // Pass profile ID here
                 if (netWorthData !== null) {
                     const { netWorth, unsoulboundNetworth } = netWorthData;
                     console.log(`Net Worth: ${formatNumber(netWorth)}`);
@@ -360,8 +361,7 @@ module.exports = {
                     console.error("Unable to retrieve net worth.");
                 }
 
-                const { netWorth, unsoulboundNetworth } = netWorthData;
-                const soulboundNetworth = netWorth - unsoulboundNetworth;
+                const { netWorth } = netWorthData;
                 
             const additionalStats = await getAdditionalStats(selectedProfile, uuid);
 
@@ -393,6 +393,13 @@ module.exports = {
                     rankEmoji = '<:non1:1304219808526766113><:non2:1304219859390828734>';
                     break;
             }
+
+            const profileData = selectedProfile.members[uuid];
+            const bankBalance = selectedProfile.banking?.balance;
+
+            const networth = await getNetworth(profileData, bankBalance, { v2Endpoint: true });
+            const { networth: totalNetworth, unsoulboundNetworth } = networth;
+            const soulboundNetworth = totalNetworth - unsoulboundNetworth;
 
             const categoryId = serverWhitelistEntry.categoryId;
             const guild = await interaction.client.guilds.fetch(interaction.guildId);
@@ -451,8 +458,8 @@ module.exports = {
                     inline: true
                 })
                 .addFields({
-                    name: '<:networth:1304223332031270932> Networth',
-                    value: `Networth: ${formatNumber(netWorth)}\n Soulbound: ${formatNumber(soulboundNetworth)}`,
+                    name: '<:total:1245104680871133407> Networth',
+                    value: `Networth: ${formatNumber(totalNetworth)}\n Unsoulbound: ${formatNumber(unsoulboundNetworth)}`,
                     inline: false
                 }, {
                     name: '<:mining:1304227698561912953> HOTM',
