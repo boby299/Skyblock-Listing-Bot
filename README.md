@@ -1,17 +1,17 @@
 # Skyblock-Listing-Bot
 ThankYou to zones for the listing bot<3
 
-Need to run "npm install skyhelper-networth" for list to work
+- Need to run "npm install skyhelper-networth" for list to work
 
-I think /whitelist doesnt work but easy fix and u can just whitelist manually in whitelist.json
-
-
+- I think /whitelist doesnt work but easy fix and u can just whitelist manually in whitelist.json
 
 
-SETUP:
+
+
+# SETUP:
 
 install dependecies or whatever
-1. Go to /storage/config.json and fill in the info 
+- 1. Go to /storage/config.json and fill in the info 
 {
     "TOKEN": "",
     "CLIENTID": "",
@@ -21,7 +21,7 @@ install dependecies or whatever
 
 
 
-2. Whitelist your server in /storage/whitelist.json
+- 2. Whitelist your server in /storage/whitelist.json
      {
     "serverId": "",
     "sellerRoleId": "",
@@ -37,7 +37,7 @@ install dependecies or whatever
 ]
 
 
-3. Put your Hypixel API Key In /commands/list.js near the top (also use this to change amojis or whatever)
+- 3. Put your Hypixel API Key In /commands/list.js near the top (also use this to change amojis or whatever)
 
 
 If Need Help DM speedometers or whosismefr (me) on disc 
