@@ -50,6 +50,10 @@ module.exports = {
                 await memberToAssign.roles.add(role);
 
                 const channel = interaction.channel;
+
+                // Send a simple ping message before the embed
+                await channel.send(`<@${user.id}>`);
+
                 const message = new EmbedBuilder()
                     .setTitle('Skyblock Listing Bot')
                     .setDescription(`Deal Finished\n\n<@${user.id}>, make sure to vouch for the seller in <#${vouchChannelId}>\n\n`)
