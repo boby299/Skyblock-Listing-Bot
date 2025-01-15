@@ -51,17 +51,16 @@ module.exports = {
 
                 const channel = interaction.channel;
 
-                // Send a simple ping message before the embed
-                await channel.send(`<@${user.id}>`);
-
                 const message = new EmbedBuilder()
                     .setTitle('Skyblock Listing Bot')
                     .setDescription(`Deal Finished\n\n<@${user.id}>, make sure to vouch for the seller in <#${vouchChannelId}>\n\n`)
                     .setColor('#302c34')
                     .setThumbnail('https://cdn.discordapp.com/avatars/1300773229467537481/01a3154bc42012e945828e266c7ace51.webp?size=80');
 
+                // Send the ping and embed in the same message
                 await channel.send({
-                    embeds: [message]
+                    content: `<@${user.id}>`, // Ping the user
+                    embeds: [message]        // Embed content
                 });
 
                 await interaction.reply({
