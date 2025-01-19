@@ -42,3 +42,11 @@ install dependecies or whatever
 
 If Need Help DM speedometers or whosismefr (me) on disc 
 ![image](https://github.com/user-attachments/assets/ec5e22aa-6fe1-479b-8d84-edf80501abc6)
+
+
+
+# STUFF TO ADD NEW
+- Add igns of the account when the skyblock account tickets open
+- Add what payment method they use to buy the skyblock accounts
+- Add the total price of MFAs to the ticket thing
+- Add a ping of the user to /finishdeal          (DONE)
