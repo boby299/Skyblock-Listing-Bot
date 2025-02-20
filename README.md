@@ -46,6 +46,7 @@ If Need Help DM speedometers or whosismefr (me) on disc
 
 
 # STUFF TO ADD NEW
+- Add transcripts to tickets (all types to store in a channel)
 - Add igns of the account when the skyblock account tickets open
 - Add what payment method they use to buy the skyblock accounts
 - Add the total price of MFAs to the ticket thing
