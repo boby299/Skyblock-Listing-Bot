@@ -51,3 +51,7 @@ If Need Help DM speedometers or whosismefr (me) on disc
 - Add what payment method they use to buy the skyblock accounts
 - Add the total price of MFAs to the ticket thing
 - Add a ping of the user to /finishdeal          (DONE)
+- Add middleman pannel 
+- Add coins panel
+- Fix price calculating for mfas
+
