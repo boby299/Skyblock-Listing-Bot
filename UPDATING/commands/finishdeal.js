@@ -59,8 +59,8 @@ module.exports = {
 
                 // Send the ping and embed in the same message
                 await channel.send({
-                    content: `<@${user.id}>`, // Ping the user
-                    embeds: [message]        // Embed content
+                    content: `<@${user.id}>`,
+                    embeds: [message]        
                 });
 
                 await interaction.reply({
